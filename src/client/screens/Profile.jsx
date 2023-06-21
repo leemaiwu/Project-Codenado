@@ -2,7 +2,9 @@ import React from 'react'
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <section>
+        <h1 className='page-title'>Profile</h1>
+    </section>
   )
 }
 

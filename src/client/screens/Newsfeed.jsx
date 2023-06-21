@@ -2,7 +2,9 @@ import React from 'react'
 
 const Newsfeed = () => {
   return (
-    <div>Newsfeed</div>
+    <section>
+        <h1 className='page-title'>Newsfeed</h1>
+    </section>
   )
 }
 

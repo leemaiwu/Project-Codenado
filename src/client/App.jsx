@@ -2,7 +2,7 @@ import React from 'react'
 import "./App.css"
 import Menu from './components/Menu'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Createpost from "./screens/Createpost"
+import Create from "./screens/Create"
 import Leaderboard from "./screens/Leaderboard/"
 import Newsfeed from "./screens/Newsfeed"
 import Profile from "./screens/Profile"
@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="App">
           <Routes>
-            <Route path='/create' element={<Createpost />}/>
+            <Route path='/create' element={<Create />}/>
             <Route path='/leaderboard' element={<Leaderboard />}/>
             <Route path='/' element={<Newsfeed />}/>
             <Route path='/profile' element={<Profile />}/>
