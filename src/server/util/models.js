@@ -1,9 +1,9 @@
 const db = require('./database')
-const {DataTypes} = require('sequelize')
+const { DataTypes } = require('sequelize')
 
 module.exports = {
 
-    User: db.define('users', {
+    User: db.define("user", {
         id: {
             primaryKey: true,
             allowNull: false,
@@ -20,7 +20,7 @@ module.exports = {
         },
     }),
 
-    Post: db.define('post', {
+    Post: db.define("post", {
         id: {
             primaryKey: true,
             allowNull: false,
@@ -41,7 +41,7 @@ module.exports = {
         },
     }),
 
-    Like: db.define('like', {
+    Like: db.define("like", {
         id: {
             primaryKey: true,
             allowNull: false,

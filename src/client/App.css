@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -53,8 +55,9 @@ form {
 
 input, textarea, select {
   width: 350px;
-  min-height: 30px;
+  min-height: 35px;
   border-radius: 4px;
+  font-size: 1rem;
   border: none;
   padding: 5px 8px;
 }
@@ -63,6 +66,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
 }
 
 .page-title {
@@ -81,22 +86,56 @@ section {
   text-decoration-line: none;
   background-color: transparent;
   border: none;
-  color: white;
+  color: rgb(240, 240, 240);
   font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
 }.button:hover{
   cursor: pointer;
 }.button::after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 1px;
+  height: 0.85px;
   bottom: 0;
   right: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(240, 240, 240);
   transform: scaleX(0);
   transform-origin: bottom center;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-in-out;
 }.button:hover::after {
   transform: scaleX(1);
   transform-origin: bottom center;
+}
+
+.register-button {
+  display: inline-block;
+  position: relative;
+  text-decoration-line: none;
+  background-color: transparent;
+  border: none;
+  color: rgb(137, 137, 137);
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  margin-top: 10px;
+}.register-button:hover{
+  cursor: pointer;
+  color: rgb(222, 213, 207);
+}
+
+.login-title {
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+.profile-title {
+  font-weight: 300;
+}
+
+.error-container {
+  display: none;
+}
+.error-container.show {
+  display: block;
 }
